@@ -97,7 +97,7 @@ enable_hugepages || exit 1
 fiocmd="fio"
 fiocmd+=" --name=read"
 fiocmd+=" --alloc-size=524288"
-fiocmd+=" --ioengine=libaio"
+fiocmd+=" --ioengine=io_uring"
 fiocmd+=" --iodepth=32"
 fiocmd+=" --direct=1"
 fiocmd+=" --rw=read"
