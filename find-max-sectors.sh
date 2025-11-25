@@ -32,7 +32,7 @@ if [ ! -b "${bdev}" ]; then
 fi
 
 echo Drive model:
-echo $(lsblk -n -o MODEL,REV "$bdev" | tr -d '\n')
+echo $(lsblk -n -o MODEL "$bdev" | tr -d '\n')
 echo
 
 echo Drive firmware:
